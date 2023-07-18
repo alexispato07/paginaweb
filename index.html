@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        body{
+            background: linear-gradient(180deg, #DE3737 0%, #3E0606 100%);
+        }
+        .caja{
+            background: linear-gradient(180deg, #B5BAEA 0%, #DBE4F1 100%);
+
+            position: center;
+            margin-top: 10px;|
+            margin-left: 80px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            width: 1000px;
+            height: 650px;
+        }
+        .header{
+            height: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        legend{
+            margin-top: 5px;
+        }
+        .nav{
+            margin-top: -20px;
+            height: 100px;
+        }
+        .section{ 
+            margin-top: 2px;
+        }
+        label{
+            font-size: 12px;
+        }
+        img{
+            border: 1px solid #001;
+            width: 120px;
+            margin-top: 5px;
+        }
+        fieldset{
+            margin-top: 20px;
+            width: 959px;
+            height: 120px;
+        }
+        table{
+            width: 959px;
+        }
+        button{
+            margin-top: 20px;
+            margin-left: 450px;
+            border-radius: 5px;
+            widht: 100px;
+        }
+    </style>
+    <body>
+        <div class = "caja">
+            <div class="header">
+                Solicitud de Trabajo
+            </div>
+            <fieldset>
+                <legend>Puesto</legend>
+            <div class = "nav">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="puesto">Puesto</label><br>
+                            <input type="text" placeholder="Puesto solicitado"><br>
+                            <label for="Smensual">SMD</label><br>
+                            <input type="text" placeholder="Sueldo mensual deseado"><br>
+                        </td>
+                        <td>
+                            <label for="fecha">Fecha</label><br>
+                            <input type="date"><br>
+                            <label for="Sautorizado">SMA</label><br>
+                            <input type="decimal" placeholder="Sueldo Mensual Autorizado"><br>
+                            <label for="fecha">Fecha de contratación</label><br>
+                            <input type="date"><br>
+                        </td>
+                        <td>
+                            <img src="https://static.vecteezy.com/system/resources/previews/018/765/757/non_2x/user-profile-icon-in-flat-style-member-avatar-illustration-on-isolated-background-human-permission-sign-business-concept-vector.jpg">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            </fieldset>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <div class = "section">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Primer Apellido">
+                            <input type="text" placeholder="Segundo Apellido">
+                            <input type="text" placeholder="Nombre(s)">
+                            <input type="number" placeholder="Edad" style="width: 70px;">
+                            <input type="text" placeholder="Estado Civil" style="width: 100px;">
+                            <input type="text" placeholder="Sexo" style="width: 90px;">
+                            <input type="text" placeholder="Nacionalidad" style="width: 90px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Domicilio" style="width: 350px;">
+                            <input type="text" placeholder="Colonia" style="width: 170px;">
+                            <input type="number" placeholder="C.P." style="width: 70px;">
+                            <input type="text" placeholder="F. Nacimiento AAAA/MMM/DDD" style="width: 200px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Ciudad o Alcaldia, Entidad Federativa del Domicilio            |   Entidad Federativa (lugar) de nacimiento" style="width: 615px;">
+                            <input type="number" placeholder="Número Celular" style="width: 200px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Personas que dependan de usted (Escriba Padres, Familia, Parentesco)" style="width: 615px;">
+                            <input type="number" placeholder="Número Casa" style="width: 200px;">
+                        </td>
+                    </tr>
+                </table>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Documentación</legend>
+                <div class = "section">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Clave Unica de Registro de Población (CURP)" style="width: 500px;">
+                            <input type="text" placeholder="No. de AFORE" style="width: 400px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Registro Federal de Contribuyentes (RFC)" style="width: 500px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Número de Seguro Social (NSS)" style="width: 500px;">
+                        </td>
+                    </tr>
+                </table>
+                </div>
+            </fieldset>
+            <div class = "footer">
+                <button onClick="Enviar();">Enviar</button>
+                <script>
+                    function Enviar(){
+                        window.print();
+                    }
+                </script>
+            </div>
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
